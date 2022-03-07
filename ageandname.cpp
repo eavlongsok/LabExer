@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string.h>
+
 using namespace std;
 
 int main(){
@@ -10,7 +10,8 @@ int main(){
     cin>>age;
 
     cout<<"Enter name: ";
-    cin.getline(name, 20);
+    cin.ignore();
+    getline (cin,name);
 
     if (age % 2 == 1){
         for (int i = 0; i < 5; i++)
